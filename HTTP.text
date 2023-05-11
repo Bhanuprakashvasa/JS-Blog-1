@@ -1,0 +1,24 @@
+
+HTTP-1 vs HTTP-2:
+=>HTTP (Hypertext Transfer Protocol) is the underlying protocol used for communication between web clients (such as web browsers) and servers. It is used to transmit various types of content including text, images, videos, and other multimedia files. Over the years, HTTP has evolved through several versions, the most popular being HTTP/1.1 and HTTP/2. This documentation will focus on the key differences between HTTP/1.1 and HTTP/2.
+
+Binary Protocol:
+=>One of the major differences between HTTP/1.1 and HTTP/2 is that HTTP/2 uses a binary protocol while HTTP/1.1 uses a text-based protocol. In other words, HTTP/1.1 uses plain text to transmit data, while HTTP/2 uses binary data. This makes HTTP/2 more efficient because binary data is easier to compress and decode, resulting in faster data transfer.
+
+Multiplexing:
+=>HTTP/2 supports multiplexing, which means that multiple requests can be sent over a single connection. This reduces the number of connections required to load a webpage, leading to faster load times. In contrast, HTTP/1.1 requires a separate connection for each request, leading to slower load times.
+
+Server Push:
+=>HTTP/2 also supports server push, which allows the server to push resources to the client before they are requested. For example, if a webpage requires a CSS file, the server can push the CSS file to the client before the client requests it. This reduces the number of round trips required to load a webpage, leading to faster load times. HTTP/1.1 does not support server push.
+
+Header Compression:
+=>HTTP/2 uses HPACK header compression, which reduces the size of header data transmitted between client and server. This reduces the amount of data that needs to be transmitted, leading to faster load times. In contrast, HTTP/1.1 does not support header compression.
+
+Security:
+=>HTTP/2 requires the use of Transport Layer Security (TLS), which provides encryption of data between client and server. This makes HTTP/2 more secure than HTTP/1.1, which does not require the use of TLS.
+
+Conclusion:
+=>HTTP/2 is a significant improvement over HTTP/1.1, with several key differences that make it more efficient, faster, and more secure. HTTP/2's use of a binary protocol, support for multiplexing and server push, header compression, and mandatory TLS encryption all contribute to faster and more secure web browsing experiences. However, not all web servers and browsers support HTTP/2 yet, so compatibility may be an issue for some users
+
+
+
